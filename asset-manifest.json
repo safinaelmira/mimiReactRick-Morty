@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/mimiReactRick-Morty/static/css/main.11e60269.chunk.css",
+    "main.js": "/mimiReactRick-Morty/static/js/main.8b23231c.chunk.js",
+    "main.js.map": "/mimiReactRick-Morty/static/js/main.8b23231c.chunk.js.map",
+    "runtime-main.js": "/mimiReactRick-Morty/static/js/runtime-main.88a12548.js",
+    "runtime-main.js.map": "/mimiReactRick-Morty/static/js/runtime-main.88a12548.js.map",
+    "static/js/2.256082df.chunk.js": "/mimiReactRick-Morty/static/js/2.256082df.chunk.js",
+    "static/js/2.256082df.chunk.js.map": "/mimiReactRick-Morty/static/js/2.256082df.chunk.js.map",
+    "index.html": "/mimiReactRick-Morty/index.html",
+    "precache-manifest.ddb37df74a44ed36c049cdb51f50a0bd.js": "/mimiReactRick-Morty/precache-manifest.ddb37df74a44ed36c049cdb51f50a0bd.js",
+    "service-worker.js": "/mimiReactRick-Morty/service-worker.js",
+    "static/css/main.11e60269.chunk.css.map": "/mimiReactRick-Morty/static/css/main.11e60269.chunk.css.map",
+    "static/js/2.256082df.chunk.js.LICENSE.txt": "/mimiReactRick-Morty/static/js/2.256082df.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/mimiReactRick-Morty/static/media/bg.5c1a1d79.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.88a12548.js",
+    "static/js/2.256082df.chunk.js",
+    "static/css/main.11e60269.chunk.css",
+    "static/js/main.8b23231c.chunk.js"
+  ]
+}
