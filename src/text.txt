@@ -1,0 +1,72 @@
+import React from 'react';
+import List from '../list/list';
+import Exactitem from '../exact-item/exact-item';
+import RMservice from '../RMservice/rmservice';
+import {withRouter, Route} from 'react-router-dom';
+import Li from '../exact-item/li';
+
+function Characters({history}){
+
+    const rmservice = new RMservice();
+
+    const editURL = (id) => {
+        history.push(`${id}`);
+    }
+
+    return(
+        <div className="mt-3">
+            <Route path="/characters/" exact>
+                <List 
+                    method={rmservice.getAllCharacters}
+                    editURL={editURL}/>
+            </Route>
+            <Route 
+                path="/characters/:id" 
+                render={({match}) => <Exactitem id={match.params.id} method={rmservice.getCharacter}>
+                    <Li label="Status: " option="status"/>
+                    <Li label="Species: " option="species"/>
+                    <Li label="Gender: " option="gender"/>
+                    <Li label="Creation data: " option="created"/>
+                </Exactitem>} exact/>
+        </div>
+    )
+}
+
+export default withRouter(Characters);
+
+
+
+
+import React from 'react';
+import List from '../list/list';
+import Exactitem from '../exact-item/exact-item';
+import Row from '../row/row';
+import RMservice from '../RMservice/rmservice';
+import {withRouter, Route} from 'react-router-dom';
+import Li from '../exact-item/li';
+
+function Locations({history, match}){
+    const rmservice = new RMservice();
+
+    const editURL = (id) => {
+        history.push(`${id}`);
+    }
+
+    const left = <List 
+                    method={rmservice.getAllLocations}
+                    editURL={editURL}
+                    />;
+
+    const right = <Route 
+                        path="/locations/:id?" 
+                        render={({match}) => <Exactitem id={match.params.id} method={rmservice.getLocation}>
+                            <Li label="Type: " option="type"/>
+                            <Li label="Dimension: " option="dimension"/>
+                        </Exactitem>}/>
+
+    return(
+        <Row left={left} right={right}/>
+    )
+}
+
+export default withRouter(Locations);

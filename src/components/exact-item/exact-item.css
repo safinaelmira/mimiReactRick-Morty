@@ -1,0 +1,8 @@
+.list-group-item.active {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.list-group-item span:last-child{
+    padding-left: 10px;
+    color: #17a2b8;
+}
